@@ -1,0 +1,103 @@
+[
+  {
+    "description": "    As a user I need to be able to log in\n    So that I can access my data",
+    "keyword": "Feature",
+    "name": "User login",
+    "line": 1,
+    "id": "user-login",
+    "tags": [],
+    "uri": "login.feature",
+    "elements": [
+      {
+        "id": "user-login;user-successfully-logs-in",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "User successfully logs in",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "the user is on the login page",
+            "result": {
+              "status": "passed",
+              "duration": 505000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "the user logs in with username \"standard_user\" and password \"secret_sauce\"",
+            "result": {
+              "status": "passed",
+              "duration": 673000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the user is taken to the dashboard page",
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "user-login;unknown-user-details",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Unknown user details",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "the user is on the login page",
+            "result": {
+              "status": "passed",
+              "duration": 111000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "the user logs in with username \"unknown_user\" and password \"secret_sauce\"",
+            "result": {
+              "status": "passed",
+              "duration": 622000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "the user is shown the error message \"Epic sadface: Username and password do not match any user in this service\"",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "the user is still on the login page",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

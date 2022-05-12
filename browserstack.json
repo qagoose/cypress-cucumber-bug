@@ -1,0 +1,38 @@
+{
+    "auth": {
+        "username": "",
+        "access_key": ""
+    },
+    "browsers": [
+        {
+            "browser": "chrome",
+            "os": "Windows 10",
+            "versions": [
+                "latest"
+            ]
+        }
+    ],
+    "run_settings": {
+        "cypress_config_file": "cypress.json",
+        "project_name": "MATS End-to-End Tests",
+        "build_name": "Build",
+        "exclude": [],
+        "parallels": "1",
+        "npm_dependencies": {
+            "cypress": "^9.5.4",
+            "cypress-cucumber-preprocessor": "^4.3.1"
+        },
+        "package_config_options": {},
+        "headless": true,
+        "downloads": [
+            "./"
+        ]
+    },
+    "connection_settings": {
+        "local": false,
+        "local_identifier": null,
+        "local_mode": null,
+        "local_config_file": null
+    },
+    "disable_usage_reporting": false
+}
